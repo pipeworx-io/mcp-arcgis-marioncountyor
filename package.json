@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-arcgis-marioncountyor",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Marion County GIS — Marion County, Oregon open geospatial data (ArcGIS).",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-a77abb6a34bcecea8c7d2f7911f90e45f1849d046cfd13ac84970c4483f38b33",
-    "sourceCommit": "454041882179fae560c06e770b6b7a2f33970015"
+    "sourceHash": "v1-4349b2ce17faed582e75e86d147cb4eb2d75a8948862252b10f0ffc19ddf7898",
+    "sourceCommit": "54bf7d1c06a0775508a65d0c388dd10ba75174c3"
   }
 }
