@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-arcgis-marioncountyor",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "Marion County GIS — Marion County, Oregon open geospatial data (ArcGIS).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-arcgis-marioncountyor": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "arcgis-marioncountyor"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-arcgis-marioncountyor.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/arcgis-marioncountyor",
   "pipeworx": {
-    "sourceHash": "v1-03a28907bca22e3665b420e08071de5a802d1713cc10e05cb7a73b548b1beb15",
-    "sourceCommit": "93c7d52ace03a2bb9aee5e6024f6858adab0dd04"
+    "mode": "gateway",
+    "slug": "arcgis-marioncountyor",
+    "gatewaySlug": "arcgis-marioncountyor",
+    "sourceHash": "v1-0e56e45a74d92224efdb5b94e95500a266a7571f24b7fc9fb5010a41b4ea1629",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
